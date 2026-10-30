@@ -1,4 +1,4 @@
-# from selenium import webdriver
+from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -57,7 +57,7 @@ def test_login_form():
 
     finally:
         # Закрываем браузер в любом случае
-        driver.quit()
+            driver.quit()
 
 if __name__ == "__main__":
     test_login_form()
